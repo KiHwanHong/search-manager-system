@@ -1,0 +1,12 @@
+spring.jpa.open-in-view: false
+
+spring:
+  profiles:
+    active: local
+    include:
+
+server:
+  port: 9097
+  servlet:
+    session:
+      timeout: 10800
