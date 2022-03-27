@@ -27,7 +27,6 @@
 .idea/**/libraries
 gradlew.bat
 gradle-wrapper.jar
-gradle-wrapper.properties
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
@@ -83,8 +82,6 @@ node_modules
 
 .project
 
-# Sonar Qube
-/docker/
 /**/.scannerwork/
 
 # localstack s3
