@@ -10,7 +10,7 @@ certificate:
       poolName: search-domain-cp
       type: com.zaxxer.hikari.HikariDataSource
       driverClassName: org.mariadb.jdbc.Driver
-      jdbcUrl: "jdbc:mysql://localhost:3306/search"
+      jdbcUrl: "jdbc:mysql://localhost:3306/searchmanager"
       username: root
       password: root
       auto-commit: false
@@ -21,7 +21,7 @@ certificate:
       maximumPoolSize: 5
     jpa:
       hibernate:
-        ddl-auto: validate
+        ddl-auto: create
       properties:
         hibernate:
           dialect: org.hibernate.dialect.MySQL57Dialect

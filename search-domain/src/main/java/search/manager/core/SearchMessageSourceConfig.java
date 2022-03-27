@@ -20,8 +20,8 @@ public class SearchMessageSourceConfig {
     return messageSource;
   }
 
-  @Bean(name = "certificateMessages")
-  public MessageSourceAccessor certificateMessages() {
+  @Bean(name = "searchMessage")
+  public MessageSourceAccessor searchMessage() {
     return new MessageSourceAccessor(searchMessageSource());
   }
 }

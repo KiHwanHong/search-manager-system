@@ -23,11 +23,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 @EnableJpaRepositories(
-    basePackages = {SearchConfigDomainDataSourceJpaConfig.SEARCH_DOMAIN_PACKAGE},
-    transactionManagerRef = SearchConfigDomainDataSourceJpaConfig.SEARCH_DOMAIN_TRANSACTION_MANAGER,
-    entityManagerFactoryRef = SearchConfigDomainDataSourceJpaConfig.SEARCH_DOMAIN_ENTITY_MANAGER_FACTORY)
+    basePackages = {SearchDomainDataSourceJpaConfig.SEARCH_DOMAIN_PACKAGE},
+    transactionManagerRef = SearchDomainDataSourceJpaConfig.SEARCH_DOMAIN_TRANSACTION_MANAGER,
+    entityManagerFactoryRef = SearchDomainDataSourceJpaConfig.SEARCH_DOMAIN_ENTITY_MANAGER_FACTORY)
 @Configuration
-public class SearchConfigDomainDataSourceJpaConfig {
+public class SearchDomainDataSourceJpaConfig {
 
   public static final String SEARCH_DOMAIN_ENTITY_MANAGER_FACTORY = "searchDomainEntityManagerFactory";
   public static final String SEARCH_DOMAIN_JPA_PROPERTIES = "searchDomainJpaProperties";

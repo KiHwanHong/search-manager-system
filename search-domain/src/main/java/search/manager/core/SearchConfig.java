@@ -20,7 +20,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EntityScan(basePackages = {"search.manager.core"})
 @EnableCaching
 @EnableScheduling
-@Import({SearchConfigDomainDataSourceJpaConfig.class})
+@Import({SearchDomainDataSourceJpaConfig.class})
 public class SearchConfig {
 
 }

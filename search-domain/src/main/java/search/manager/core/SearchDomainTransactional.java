@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@Transactional(SearchConfigDomainDataSourceJpaConfig.SEARCH_DOMAIN_TRANSACTION_MANAGER)
+@Transactional(SearchDomainDataSourceJpaConfig.SEARCH_DOMAIN_TRANSACTION_MANAGER)
 @SuppressWarnings("common-java:DuplicatedBlocks")
 public @interface SearchDomainTransactional {
 

@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SearchQueryDslConfig {
 
-  @PersistenceContext(unitName = SearchConfigDomainDataSourceJpaConfig.SEARCH_DOMAIN_PERSIST_UNIT)
-  private EntityManager certificateEntityManager;
+  @PersistenceContext(unitName = SearchDomainDataSourceJpaConfig.SEARCH_DOMAIN_PERSIST_UNIT)
+  private EntityManager searchEntityManager;
 
   @Bean
   public JPAQueryFactory certificateJpaQueryFactory() {
-    return new JPAQueryFactory(certificateEntityManager);
+    return new JPAQueryFactory(searchEntityManager);
   }
 }

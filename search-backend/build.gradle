@@ -4,7 +4,7 @@ jar.enabled = false
 description = "Search Manager Agent module"
 
 dependencies {
-//    compile project(':search-domain')
+    compile project(':search-domain')
 
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile "org.springframework.boot:spring-boot-starter-security"
